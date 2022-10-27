@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style2.css">
+    <style media="screen">
+    body {
+      width: 100%;
+      height: 10000px;
+    }
+    .all{
+      position: relative;
+      display: block;
+      height: 100%;
+      width: 1690px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      .headline{
+        position: absolute;
+        bottom: 85px;
+        right: 300px;
+        text-align: center;
+      }
+      .boardimg {
+        width: 900px;
+        height: 400px;
+        position: absolute;
+        margin: 0 auto;
+        right: 0px;
+        bottom: 10px;
+        z-index: 2;
+      }
+      .board{
+        width: 900px;
+        height: 400px;
+        background: white;
+        border: 10px solid black;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 400px;
+        border-radius: 10px;
+        z-index: 2;
+      }
+      .subboard1{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 0px;
+      }
+      .stick1{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: absolute;
+        left: 50px;
+      }
+      .subboard2{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 200px;
+      }
+      .stick2{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: absolute;
+        left: 50px;
+      }
+      .subboard3{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 400px;
+      }
+      .stick3{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: absolute;
+        left: 50px;
+      }
+      .subboard4{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 600px;
+      }
+      .stick4{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: absolute;
+        left: 50px;
+      }
+      .subboard5{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 800px;
+      }
+      .stick5{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: absolute;
+        left: 50px;
+      }
+      .road1{
+        position: absolute;
+        width: 5px;
+        height: 965px;
+        background-color: black;
+        left: -340px;
+        top: -110px;
+      }
+      .road2{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 100px;
+        background-color: black;
+        left: 100px;
+        top: -110px;
+      }
+      .road2_2{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 460px;
+        background-color: black;
+        left: 100px;
+        top: 400px;
+      }
+      .road3{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 100px;
+        background-color: black;
+        left: 795px;
+        top: -110px;
+      }
+      .road3_2{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 460px;
+        background-color: black;
+        left: 795px;
+        top: 400px;
+      }
+      .road4{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 965px;
+        background-color: black;
+        left: 1190px;
+        top: -110px;
+      }
+      .roadline1_1{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: -100px;
+      }
+      .roadline1_2{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 50px;
+      }
+      .roadline1_3{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 200px;
+      }
+      .roadline1_4{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 350px;
+      }
+      .roadline1_5{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 500px;
+      }
+      .roadline1_6{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 650px;
+      }
+      .roadline1_7{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: -130px;
+        top: 800px;
+      }
+      .roadline2_1{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: -100px;
+      }
+      .roadline2_2{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 50px;
+      }
+      .roadline2_3{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 200px;
+      }
+      .roadline2_4{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 350px;
+      }
+      .roadline2_5{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 500px;
+      }
+      .roadline2_6{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 650px;
+      }
+      .roadline2_7{
+        position: absolute;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        left: 1000px;
+        top: 800px;
+      }
+      .boardstand{
+        width: 60px;
+        height: 460px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: 400px;
+        right: 430px;
+      }
+      .bridge{
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        top: 955px;
+      }
+      .bridge1{
+        width: 100%;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+      }
+      .bridge2{
+        width: 100%;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 80px;
+        left: -1px;
+      }
+
+      .balka1{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+      .balka2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+      }
+      .balka3{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 130px;
+      }
+      .balka4{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 180px;
+      }
+      .balka5{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 230px;
+      }
+      .balka6{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 280px;
+      }
+      .balka7{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 330px;
+      }
+      .balka8{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 380px;
+      }
+      .balka9{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 430px;
+      }
+      .balka10{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 480px;
+      }
+      .balka11{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 530px;
+      }
+      .balka12{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 580px;
+      }
+      .balka13{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 630px;
+      }
+      .balka14{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 680px;
+      }
+      .balka15{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 730px;
+      }
+      .balka16{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 780px;
+      }
+      .balka17{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 830px;
+      }
+      .balka18{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 880px;
+      }
+      .balka19{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 930px;
+      }
+      .balka20{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 980px;
+      }
+      .balka21{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1030px;
+      }
+      .balka22{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1080px;
+      }
+      .balka23{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1130px;
+      }
+      .balka24{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1180px;
+      }
+      .balka25{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1230px;
+      }
+      .balka26{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1280px;
+      }
+      .balka27{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1330px;
+      }
+      .balka28{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1380px;
+      }
+      .balka29{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1430px;
+      }
+      .balka30{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1480px;
+      }
+      .balka31{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1530px;
+      }
+      .balka32{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1580px;
+      }
+      .balka33{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1630px;
+      }
+      .balka34{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1680px;
+      }
+
+      .car{
+        position: absolute;
+        top: 460px;
+        left: -80px;
+      }
+      .line{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        top: 170px;
+        left: -6px;
+      }
+      .line2{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        top: 770px;
+        left: -6px;
+      }
+
+      .bridgeline1_1{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 50px;
+      }
+      .bridgeline1_2{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 250px;
+      }
+      .bridgeline1_3{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 450px;
+      }
+      .bridgeline1_4{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 650px;
+      }
+      .bridgeline1_5{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 850px;
+      }
+      .bridgeline1_6{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 1050px;
+      }
+      .bridgeline1_7{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 1250px;
+      }
+      .bridgeline1_8{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 1450px;
+      }
+      .bridgeline1_9{
+        position: absolute;
+        width: 40px;
+        height: 15px;
+        background-color: black;
+        top: 460px;
+        left: 1650px;
+      }
+      .pricep{
+        z-index: 1;
+        position: absolute;
+        top: 390px;
+        left: 300px;
+      }
+      .vpricep{
+        position: absolute;
+        width: 502px;
+        height: 150px;
+        top: 293px;
+        left: 301px;
+      }
+      .bukvaД{
+        position: absolute;
+        rotate: -110deg;
+        top: 15px;
+        left: 25px;
+      }
+      .bukvaО{
+        position: absolute;
+        rotate: 30deg;
+        top: -15px;
+        left: 100px;
+      }
+      .bukvaУ{
+        position: absolute;
+        rotate: -65deg;
+        top: 10px;
+        left: 160px;
+      }
+      .bukvaС{
+        position: absolute;
+        rotate: -30deg;
+        top: -10px;
+        left: 200px;
+      }
+      .bukvaГ{
+        position: absolute;
+        rotate: -85deg;
+        top: 10px;
+        left: 267px;
+      }
+      .bukvaЗ{
+        position: absolute;
+        rotate: -90deg;
+        top: 10px;
+        left: 285px;
+      }
+      .bukvaЛ{
+        position: absolute;
+        rotate: 80deg;
+        top: -10px;
+        left: 350px;
+      }
+      .bukvaЪ{
+        position: absolute;
+        rotate: -30deg;
+        top: 75px;
+        left: 0px;
+      }
+      .bukvaЧ{
+        position: absolute;
+        rotate: 30deg;
+        top: 120px;
+        left: -5px;
+      }
+      .bukvaЯ{
+        position: absolute;
+        rotate: 30deg;
+        top: 75px;
+        left: 50px;
+      }
+      .bukvaМ{
+        position: absolute;
+        rotate: -30deg;
+        top: 75px;
+        left: 125px;
+      }
+      .bukvaА{
+        position: absolute;
+        rotate: -10deg;
+        top: 75px;
+        left: 210px;
+      }
+      .bukvaФ{
+        position: absolute;
+        rotate: 20deg;
+        top: 85px;
+        left: 275px;
+      }
+      .bukvaИ{
+        position: absolute;
+        rotate: -6deg;
+        top: 85px;
+        left: 355px;
+      }
+      .bukvaР{
+        position: absolute;
+        rotate: -30deg;
+        top: 85px;
+        left: 435px;
+      }
+      .bukvaК{
+        position: absolute;
+        rotate: -110deg;
+        top: -30px;
+        left: 265px;
+      }
+      .oshrifte{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        top: 1750px;
+      }
+      .oshr{
+        position: absolute;
+        left:406px;
+      }
+      .line3{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        top: 70px;
+        left: -6px;
+      }
+      .road5{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 400px;
+        background-color: black;
+        left: 70px;
+        top: 70px;
+      }
+      .road6{
+        position: absolute;
+        margin: 0 auto;
+        width: 5px;
+        height: 400px;
+        background-color: black;
+        left: 1600px;
+        top: 70px;
+      }
+      .h1{
+        position: absolute;
+        left: 400px;
+        top: 130px;
+      }
+      .h2{
+        position: absolute;
+        left: 1000px;
+        top: 130px;
+      }
+      .p1{
+        position: absolute;
+        left: 400px;
+        top: 180px;
+      }
+      .p2{
+        position: absolute;
+        left: 1000px;
+        top: 180px;
+      }
+      .h3{
+        position: absolute;
+        left: 400px;
+        top: 300px;
+      }
+      .h4{
+        position: absolute;
+        left: 1000px;
+        top: 300px;
+      }
+      .p3{
+        position: absolute;
+        left: 400px;
+        top: 350px;
+      }
+      .p4{
+        position: absolute;
+        left: 1000px;
+        top: 350px;
+      }
+      .bridge_1{
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        top: 460px;
+      }
+      .balka1_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+      .balka2_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+      }
+      .balka3_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 130px;
+      }
+      .balka4_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 180px;
+      }
+      .balka5_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 230px;
+      }
+      .balka6_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 280px;
+      }
+      .balka7_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 330px;
+      }
+      .balka8_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 380px;
+      }
+      .balka9_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 430px;
+      }
+      .balka10_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 480px;
+      }
+      .balka11_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 530px;
+      }
+      .balka12_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 580px;
+      }
+      .balka13_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 630px;
+      }
+      .balka14_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 680px;
+      }
+      .balka15_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 730px;
+      }
+      .balka16_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 780px;
+      }
+      .balka17_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 830px;
+      }
+      .balka18_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 880px;
+      }
+      .balka19_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 930px;
+      }
+      .balka20_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 980px;
+      }
+      .balka21_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1030px;
+      }
+      .balka22_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1080px;
+      }
+      .balka23_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1130px;
+      }
+      .balka24_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1180px;
+      }
+      .balka25_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1230px;
+      }
+      .balka26_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1280px;
+      }
+      .balka27_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1330px;
+      }
+      .balka28_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1380px;
+      }
+      .balka29_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1430px;
+      }
+      .balka30_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1480px;
+      }
+      .balka31_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1530px;
+      }
+      .balka32_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1580px;
+      }
+      .balka33_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1630px;
+      }
+      .balka34_2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+        right: 1680px;
+      }
+      .line4{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        top: 635px;
+        left: -6px;
+      }
+      .line5{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        top: 1335px;
+        left: -6px;
+      }
+      .bridgeline2_1{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 50px;
+      }
+      .bridgeline2_2{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 250px;
+      }
+      .bridgeline2_3{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 450px;
+      }
+      .bridgeline2_4{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 650px;
+      }
+      .bridgeline2_5{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 850px;
+      }
+      .bridgeline2_6{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 1050px;
+      }
+      .bridgeline2_7{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 1250px;
+      }
+      .bridgeline2_8{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 1450px;
+      }
+      .bridgeline2_9{
+        position: absolute;
+        width: 40px;
+        height: 15px;
+        background-color: black;
+        top: 950px;
+        left: 1650px;
+      }
+      .flag{
+        z-index: 1;
+        position: absolute;
+        top: 750px;
+        left: 20px;
+      }
+      .okonishe{
+        position: absolute;
+        width: 100%;
+        top: 2000px;
+      }
+      .okno{
+        position: absolute;
+        top: 1085px;
+        left: -10px;
+      }
+      .bulochnaja{
+        position: absolute;
+        transform: scale(-1, 1);
+        color: #B8B8B8;
+        top: 1380px;
+        right: 90px;
+      }
+      .bukvaП{
+        position: absolute;
+        top: 2040px;
+        left: 820px;
+        rotate: 20deg;
+        color: #B8B8B8;
+      }
+      .bukvaА1{
+        position: absolute;
+        top:1995px;
+        left: 800px;
+        rotate: -30deg;
+        color: #B8B8B8;
+      }
+      .bukvaР1{
+        position: absolute;
+        top: 1965px;
+        left: 838px;
+        rotate: -30deg;
+        color: #B8B8B8;
+      }
+      .bukvaР2{
+        position: absolute;
+        top: 1910px;
+        left: 830px;
+        rotate: 20deg;
+        color: #B8B8B8;
+      }
+      .bukvaР3{
+        position: absolute;
+        top:1840px;
+        left: 840px;
+        rotate: -50deg;
+        color: #B8B8B8;
+      }
+      .menu{
+        top: 4500px;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        left: -1px;
+      }
+      .men{
+        position: absolute;
+        color: white;
+        top: 108px;
+        left: 712px;
+      }
+      .men_h1{
+        position: absolute;
+        color: white;
+        top: 350px;
+        left: 665px;
+      }
+      .men_line{
+        position: absolute;
+        width: 359px;
+        height: 3px;
+        background-color: white;
+        top: 400px;
+        left: 665px;
+      }
+      .men_p1{
+        position: absolute;
+        color: white;
+        top: 450px;
+        left: 465px;
+      }
+      .men_p2{
+        position: absolute;
+        color: white;
+        top: 500px;
+        left: 465px;
+      }
+      .men_p3{
+        position: absolute;
+        color: white;
+        top: 550px;
+        left: 465px;
+      }
+      .men_p4{
+        position: absolute;
+        color: white;
+        top: 600px;
+        left: 465px;
+      }
+      .men_p5{
+        position: absolute;
+        color: white;
+        top: 650px;
+        left: 465px;
+      }
+      .men_p1_2{
+        position: absolute;
+        color: white;
+        top: 450px;
+        right: 475px;
+      }
+      .men_p2_2{
+        position: absolute;
+        color: white;
+        top: 500px;
+        right: 475px;
+      }
+      .men_p3_2{
+        position: absolute;
+        color: white;
+        top: 550px;
+        right: 475px;
+      }
+      .men_p4_2{
+        position: absolute;
+        color: white;
+        top: 600px;
+        right: 475px;
+      }
+      .men_p5_2{
+        position: absolute;
+        color: white;
+        top: 650px;
+        right: 475px;
+      }
+      .curveline{
+        position: absolute;
+        top: 750px;
+        left: 420px;
+      }
+      .men_h2{
+        position: absolute;
+        color: white;
+        top: 840px;
+        left: 700px;
+      }
+      .men_line2{
+        position: absolute;
+        width: 280px;
+        height: 3px;
+        background-color: white;
+        top: 890px;
+        left: 700px;
+      }
+      .men_p1_3{
+        position: absolute;
+        color: white;
+        top: 950px;
+        left: 515px;
+      }
+      .men_p2_3{
+        position: absolute;
+        color: white;
+        top: 1000px;
+        left: 465px;
+      }
+      .men_p3_3{
+        position: absolute;
+        color: white;
+        top: 950px;
+        left: 995px;
+      }
+      .men_p4_3{
+        position: absolute;
+        color: white;
+        top: 1000px;
+        left: 900px;
+      }
+      .men_line3{
+        position: absolute;
+        width: 1.5px;
+        height: 250px;
+        background-color: white;
+        top: 930px;
+        left: 835px;
+      }
+      .menu2{
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        top: 5650px;
+        left: -1px;
+      }
+      .men_line4{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        top: 1295px;
+        z-index: 1;
+      }
+      .men_h3{
+        position: absolute;
+        color: white;
+        top: 1350px;
+        left: 732px;
+        z-index: 1;
+      }
+      .men_line5{
+        position: absolute;
+        width: 210px;
+        height: 3px;
+        background-color: white;
+        top: 1400px;
+        left: 730px;
+        z-index: 1;
+      }
+      .chek{
+        position: absolute;
+        z-index: 1;
+        top: 5930px;
+      }
+      .beliy{
+        position: absolute;
+        width: 100%;
+        height: 2000px;
+        z-index: 2;
+        background-color: white;
+        top: 7035px;
+      }
+      .beliy_line{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        left: -1px;
+        top: -3px;
+      }
+      .bigK{
+        position: absolute;
+        color: black;
+        top: 100px;
+        left: 250px;
+      }
+      .krugi1{
+        position: absolute;
+        top: 140px;
+        left: 220px;
+      }
+      .bigKdesc{
+        position: absolute;
+        top: 300px;
+        right: 250px;
+      }
+      .bigЖ{
+        position: absolute;
+        color: black;
+        top: 700px;
+        right: 250px;
+      }
+      .krugi2{
+        position: absolute;
+        top: 910px;
+        left: 1030px;
+      }
+      .bigЖdesc{
+        position: absolute;
+        top: 900px;
+        left: 250px;
+      }
+      .beliy_line2{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        left: -1px;
+        top: 1350px;
+      }
+      .ff{
+        position: absolute;
+        color: black;
+        top: 1380px;
+        left: 685px;
+      }
+      .fofa{
+        position: absolute;
+        top: 1500px;
+        left: 380px
+      }
+      .podval{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        left: -10px;
+        background-color: black;
+        top: 9600px;
+        z-index: 3;
+      }
+      .group{
+        position: absolute;
+        top: 280px;
+        right: 50px;
+        color: white;
+      }
+      .name{
+        position: absolute;
+        top: 330px;
+        right: 50px;
+        color: white;
+      }
+      .hse_logo{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="all">
+      <div class="board">
+        <div class="road1"></div>
+        <div class="road2"></div>
+        <div class="road2_2"></div>
+        <div class="road3"></div>
+        <div class="road3_2"></div>
+        <div class="road4"></div>
+
+        <div class="roadline1_1"></div>
+        <div class="roadline1_2"></div>
+        <div class="roadline1_3"></div>
+        <div class="roadline1_4"></div>
+        <div class="roadline1_5"></div>
+        <div class="roadline1_6"></div>
+        <div class="roadline1_7"></div>
+
+        <div class="roadline2_1"></div>
+        <div class="roadline2_2"></div>
+        <div class="roadline2_3"></div>
+        <div class="roadline2_4"></div>
+        <div class="roadline2_5"></div>
+        <div class="roadline2_6"></div>
+        <div class="roadline2_7"></div>
+        <div class="boardstand"></div>
+        <div class="car"><img src="images/car.png" alt="car" height="300px"></div>
+        <div class="boardimg"><img src="images/board.png" alt="board" height="415px" width="900"></div>
+        <div class="subboard1">
+          <div class="stick1"></div>
+        </div>
+        <div class="subboard2">
+          <div class="stick2"></div>
+        </div>
+        <div class="subboard3">
+          <div class="stick3"></div>
+        </div>
+        <div class="subboard4">
+          <div class="stick4"></div>
+        </div>
+        <div class="subboard5">
+          <div class="stick5"></div>
+        </div>
+        <div class="headline">
+          <h1>
+            ANGLECIA <br>
+            PRO <br>
+            DISPLAY <br>
+          </h1>
+        </div>
+      </div>
+
+      <div class="bridge">
+        <div class="bridge1"></div>
+        <div class="bridge2"></div>
+        <div class="balka1"></div>
+        <div class="balka2"></div>
+        <div class="balka3"></div>
+        <div class="balka4"></div>
+        <div class="balka5"></div>
+        <div class="balka6"></div>
+        <div class="balka7"></div>
+        <div class="balka8"></div>
+        <div class="balka9"></div>
+        <div class="balka10"></div>
+        <div class="balka11"></div>
+        <div class="balka12"></div>
+        <div class="balka13"></div>
+        <div class="balka14"></div>
+        <div class="balka15"></div>
+        <div class="balka16"></div>
+        <div class="balka17"></div>
+        <div class="balka18"></div>
+        <div class="balka19"></div>
+        <div class="balka20"></div>
+        <div class="balka21"></div>
+        <div class="balka22"></div>
+        <div class="balka23"></div>
+        <div class="balka24"></div>
+        <div class="balka25"></div>
+        <div class="balka26"></div>
+        <div class="balka27"></div>
+        <div class="balka28"></div>
+        <div class="balka29"></div>
+        <div class="balka30"></div>
+        <div class="balka31"></div>
+        <div class="balka32"></div>
+        <div class="balka33"></div>
+        <div class="balka34"></div>
+
+        <div class="line"></div>
+        <div class="line2"></div>
+
+        <div class="bridgeline1_1"></div>
+        <div class="bridgeline1_2"></div>
+        <div class="bridgeline1_3"></div>
+        <div class="bridgeline1_4"></div>
+        <div class="bridgeline1_5"></div>
+        <div class="bridgeline1_6"></div>
+        <div class="bridgeline1_7"></div>
+        <div class="bridgeline1_8"></div>
+        <div class="bridgeline1_9"></div>
+
+        <div class="pricep"><img src="images/pricep.png" alt="pricep" height="210px"></div>
+
+        <div class="vpricep">
+          <div class="bukvaД">
+            <h1>Д</h1>
+          </div>
+          <div class="bukvaО">
+            <h1>О</h1>
+          </div>
+          <div class="bukvaУ">
+            <h1>У</h1>
+          </div>
+          <div class="bukvaС">
+            <h1>С</h1>
+          </div>
+          <div class="bukvaГ">
+            <h1>Г</h1>
+          </div>
+          <div class="bukvaЗ">
+            <h1>З</h1>
+          </div>
+          <div class="bukvaЛ">
+            <h1>Л</h1>
+          </div>
+          <div class="bukvaЪ">
+            <h1>Ъ</h1>
+          </div>
+          <div class="bukvaЧ">
+            <h1>Ч</h1>
+          </div>
+          <div class="bukvaЯ">
+            <h1>Я</h1>
+          </div>
+          <div class="bukvaМ">
+            <h1>М</h1>
+          </div>
+          <div class="bukvaФ">
+            <h1>Ф</h1>
+          </div>
+          <div class="bukvaА">
+            <h1>А</h1>
+          </div>
+          <div class="bukvaИ">
+            <h1>И</h1>
+          </div>
+          <div class="bukvaР">
+            <h1>Р</h1>
+          </div>
+          <div class="bukvaК">
+            <h1>К</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="oshrifte">
+        <div class="oshr">
+        <h1>О  ШРИФТЕ  ANGLECIA  PRO  DISPLAY</h1>
+        </div>
+        <div class="line3"></div>
+        <div class="road5"></div>
+        <div class="road6"></div>
+        <div class="h1">
+          <h1>Название:</h1>
+        </div>
+        <div class="h2">
+          <h1>Виды:</h1>
+        </div>
+        <div class="p1">
+          <h1>Anglecia Pro Display</h1>
+        </div>
+        <div class="p2">
+          <h1>Антиква нового стиля</h1>
+        </div>
+        <div class="h3">
+          <h1>Семья:</h1>
+        </div>
+        <div class="h4">
+          <h1>Особенности:</h1>
+        </div>
+        <div class="p3">
+          <h1>Anglecia Pro</h1>
+        </div>
+        <div class="p4">
+          <h1>
+            Повышенная
+            <br>
+            контрастность</h1>
+        </div>
+        <div class="bridge_1">
+          <div class="bridge3"></div>
+          <div class="bridge4"></div>
+          <div class="bridge1"></div>
+          <div class="bridge2"></div>
+          <div class="balka1_2"></div>
+          <div class="balka2_2"></div>
+          <div class="balka3_2"></div>
+          <div class="balka4_2"></div>
+          <div class="balka5_2"></div>
+          <div class="balka6_2"></div>
+          <div class="balka7_2"></div>
+          <div class="balka8_2"></div>
+          <div class="balka9_2"></div>
+          <div class="balka10_2"></div>
+          <div class="balka11_2"></div>
+          <div class="balka12_2"></div>
+          <div class="balka13_2"></div>
+          <div class="balka14_2"></div>
+          <div class="balka15_2"></div>
+          <div class="balka16_2"></div>
+          <div class="balka17_2"></div>
+          <div class="balka18_2"></div>
+          <div class="balka19_2"></div>
+          <div class="balka20_2"></div>
+          <div class="balka21_2"></div>
+          <div class="balka22_2"></div>
+          <div class="balka23_2"></div>
+          <div class="balka24_2"></div>
+          <div class="balka25_2"></div>
+          <div class="balka26_2"></div>
+          <div class="balka27_2"></div>
+          <div class="balka28_2"></div>
+          <div class="balka29_2"></div>
+          <div class="balka30_2"></div>
+          <div class="balka31_2"></div>
+          <div class="balka32_2"></div>
+          <div class="balka33_2"></div>
+          <div class="balka34_2"></div>
+        </div>
+
+        <div class="line4"></div>
+        <div class="line5"></div>
+        <div class="bridgeline2_1"></div>
+        <div class="bridgeline2_2"></div>
+        <div class="bridgeline2_3"></div>
+        <div class="bridgeline2_4"></div>
+        <div class="bridgeline2_5"></div>
+        <div class="bridgeline2_6"></div>
+        <div class="bridgeline2_7"></div>
+        <div class="bridgeline2_8"></div>
+        <div class="bridgeline2_9"></div>
+
+        <div class="flag"><img src="images/flag.png" alt="flag" height="420px"></div>
+      </div>
+
+      <div class="okonishe">
+        <div class="okno"><img src="images/okno.png" alt="okno" width="100%"></div>
+        <div class="bulochnaja">
+          <h1>СВЕЖАЯ ВЫПЕЧКА</h1>
+        </div>
+        <div class="bukvaП">
+          <h1>П</h1>
+        </div>
+        <div class="bukvaА1">
+          <h1>А</h1>
+        </div>
+        <div class="bukvaР1">
+          <h1>Р</h1>
+        </div>
+        <div class="bukvaР2">
+          <h1>Р</h1>
+        </div>
+        <div class="bukvaР3">
+          <h1>Р</h1>
+        </div>
+      </div>
+
+      <div class="menu"><img src="images/menu.png" alt="menu" width="100%">
+
+        <div class="men">
+          <h1>МЕНЮ</h1>
+        </div>
+        <div class="men_h1">
+          <h1>НАЧЕРТАНИЯ</h1>
+        </div>
+        <div class="men_p1">
+          <h1>БУЛОЧКА «ВОЗДУШНЯ»</h1>
+        </div>
+        <div class="men_p2">
+          <h1>КОФЕ «ЛЕГКИЙ»</h1>
+        </div>
+        <div class="men_p3">
+          <h1>БУЛОЧКА «КЛАССИЧЕСКАЯ»</h1>
+          </div>
+        <div class="men_p4">
+          <h1>БЛЮДО  «ЩЕДРАЯ ТАРЕЛКА»</h1>
+        </div>
+        <div class="men_p5">
+          <h1>БЛЮДО ДНЯ «ЧЕРНЫЙ УГОРЬ»</h1>
+        </div>
+        <div class="men_p1_2">
+          <h1>/EXTRA LIGHT</h1>
+        </div>
+        <div class="men_p2_2">
+          <h1>/LIGHT</h1>
+        </div>
+        <div class="men_p3_2">
+          <h1>/REGULAR</h1>
+        </div>
+        <div class="men_p4_2">
+          <h1>/BOLD</h1>
+        </div>
+        <div class="men_p5_2">
+          <h1>/BLACK</h1>
+        </div>
+        <div class="curveline"><img src="images/curveline.png" alt="line" height="31px"></div>
+        <div class="men_line"></div>
+        <div class="men_line2"></div>
+        <div class="men_h2">
+          <h1>СИМВОЛЫ</h1>
+        </div>
+        <div class="men_p1_3">
+          <h1>КИРИЛЛИЦА</h1>
+        </div>
+        <div class="men_p2_3">
+          <h1>Аа Бб Вв Гг Дд Жж Зз <br>
+            Ии Йй Кк Лл Мм Нн <br>
+            Оо Пп Рр Сс Тт Уу Фф <br>
+            Хх Цц Шш Щщ Ъъ Ыы <br>
+            Ьь Ээ Юю Яя</h1>
+        </div>
+        <div class="men_p3_3">
+          <h1>LATIN</h1>
+        </div>
+        <div class="men_p4_3">
+          <h1>Aa Bb Cc Dd Ee Ff Gg <br>
+             Hh Ii Jj Kk Ll Mm Nn Oo <br>
+             Pp Qq Rr Ss Tt Uu Vv <br>
+             Ww Xx Yy Zz</h1>
+        </div>
+        <div class="men_line3"></div>
+        <div class="men_line4"></div>
+        <div class="men_line5"></div>
+        <div class="men_h3">
+          <h1>ЦИФРЫ</h1>
+        </div>
+      </div>
+
+      <div class="chek"><img src="images/chek.png" alt="chek" width="100%"></div>
+      <div class="menu2"><img src="images/menu2.png" alt="menu2" width="100%"></div>
+
+      <div class="beliy">
+        <div class="beliy_line"></div>
+        <div class="bigK">
+          <h1>К</h1>
+        </div>
+        <div class="krugi1"><img src="images/krugi1.png" alt="krugi1" width="400px"></div>
+        <div class="bigKdesc">
+          <h1>Шрифт имеет тонкие <br>
+            засечки и увеличенные <br>
+            капли на концах букв </h1>
+        </div>
+
+        <div class="bigЖ">
+          <h1>Ж</h1>
+        </div>
+        <div class="krugi2"><img src="images/krugi2.png" alt="krugi2" width="100px"></div>
+        <div class="bigЖdesc">
+          <h1>Увеличенный контраст <br>
+            предполагает использование <br>
+            в заголовках и вывесках </h1>
+        </div>
+        <div class="beliy_line2">  </div>
+        <div class="ff">
+          <h1>FONT FAMILY</h1>
+        </div>
+        <div class="fofa"><img src="images/fofa.png" alt="fofa" width="1000"></div>
+      </div>
+
+      <div class="podval">
+        <div class="group">
+          <h1>B22ДЗ10</h1>
+        </div>
+        <div class="name">
+          <h1>МАРТИНОВС ДЕНИСС</h1>
+        </div>
+        <div class="hse_logo"><img src="images/hse_logo.png" alt="menu2" width="300px"></div>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>

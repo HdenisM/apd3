@@ -1,0 +1,293 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: 'Anglecia Pro Display';
+    src: url('../fonts/AngleciaProDisplay.eot');
+    src: url('../fonts/AngleciaProDisplay.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay.svg#AngleciaProDisplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display Bold';
+    src: url('../fonts/AngleciaProDisplay-Bold.eot');
+    src: url('../fonts/AngleciaProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay-Bold.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay-Bold.svg#AngleciaProDisplay-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display Black';
+    src: url('../fonts/AngleciaProDisplay-Black.eot');
+    src: url('../fonts/AngleciaProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay-Black.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay-Black.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay-Black.svg#AngleciaProDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display';
+    src: url('AngleciaProDisplay-ExtraLight.eot');
+    src: url('AngleciaProDisplay-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('AngleciaProDisplay-ExtraLight.woff2') format('woff2'),
+        url('AngleciaProDisplay-ExtraLight.woff') format('woff'),
+        url('AngleciaProDisplay-ExtraLight.ttf') format('truetype'),
+        url('AngleciaProDisplay-ExtraLight.svg#AngleciaProDisplay-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display';
+    src: url('AngleciaProDisplay-Light.eot');
+    src: url('AngleciaProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('AngleciaProDisplay-Light.woff2') format('woff2'),
+        url('AngleciaProDisplay-Light.woff') format('woff'),
+        url('AngleciaProDisplay-Light.ttf') format('truetype'),
+        url('AngleciaProDisplay-Light.svg#AngleciaProDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.headline{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 60px;
+  font-style: italic;
+}
+
+.bukvaД{
+  font-family: 'Anglecia Pro Display';
+  font-size: 100px;
+}
+.bukvaО{
+  font-family: 'Anglecia Pro Display';
+  font-size: 80px;
+}
+.bukvaУ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 100px;
+}
+.bukvaС{
+  font-family: 'Anglecia Pro Display';
+  font-size: 80px;
+}
+.bukvaГ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 120px;
+}
+.bukvaЗ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 80px;
+}
+.bukvaЛ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 120px;
+}
+.bukvaЪ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 60px;
+}
+.bukvaЧ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 60px;
+}
+.bukvaЯ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 90px;
+}
+.bukvaМ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 90px;
+}
+.bukvaФ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 90px;
+}
+.bukvaА{
+  font-family: 'Anglecia Pro Display';
+  font-size: 90px;
+}
+.bukvaИ{
+  font-family: 'Anglecia Pro Display';
+  font-size: 100px;
+}
+.bukvaР{
+  font-family: 'Anglecia Pro Display';
+  font-size: 120px;
+}
+.bukvaК{
+  font-family: 'Anglecia Pro Display';
+  font-size: 70px;
+}
+.oshr{
+  font-family: 'Anglecia Pro Display';
+  font-size: 50px;
+}
+.h1{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.h2{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.p1{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.p2{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.h3{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.h4{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.p3{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.p4{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.bulochnaja{
+  font-family: 'Anglecia Pro Display';
+  font-size: 100px;
+}
+.bukvaП{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 50px;
+}
+.bukvaА1{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 55px;
+}
+.bukvaР1{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 70px;
+}
+.bukvaР2{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 75px;
+}
+.bukvaР3{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 80px;
+}
+.men{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 75px;
+}
+.men_h1{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 50px;
+}
+.men_p1{
+  font-family: 'Anglecia Pro Display ExtraLight';
+  font-size: 30px;
+}
+.men_p2{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 30px;
+}
+.men_p3{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.men_p4{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.men_p5{
+  font-family: 'Anglecia Pro Display Black';
+  font-size: 30px;
+}
+.men_p1_2{
+  font-family: 'Anglecia Pro Display ExtraLight';
+  font-size: 30px;
+}
+.men_p2_2{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 30px;
+}
+.men_p3_2{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.men_p4_2{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 30px;
+}
+.men_p5_2{
+  font-family: 'Anglecia Pro Display Black';
+  font-size: 30px;
+}
+.men_h2{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 50px;
+}
+.men_p1_3{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.men_p2_3{
+  font-family: 'Anglecia Pro Display ExtraLight';
+  font-size: 30px;
+}
+.men_p3_3{
+  font-family: 'Anglecia Pro Display';
+  font-size: 30px;
+}
+.men_p4_3{
+  font-family: 'Anglecia Pro Display ExtraLight';
+  font-size: 30px;
+}
+.men_h3{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 50px;
+}
+.bigK{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 500px;
+}
+.bigЖ{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 500px;
+}
+.bigKdesc{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 40px;
+}
+.bigЖdesc{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 40px;
+}
+.ff{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 50px;
+}
+.group{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 30px;
+}
+.name{
+  font-family: 'Anglecia Pro Display Light';
+  font-size: 30px;
+}
